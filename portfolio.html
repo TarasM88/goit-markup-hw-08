@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Портфолио</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="menu__wrapper">
+          <a class="links logo logo--header" href="./index.html" lang="en">
+            <span class="logo--accent">Web</span>Studio
+          </a>
+          <button
+            class="button__menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon__menu">
+              <use href="./images/icons40px/symbol-defs.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="button__menu-close js-close-menu">
+            <svg class="icon__menu-close">
+              <use href="./images/icons40px/symbol-defs.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="menu__wrapper">
+            <nav class="navigation">
+              <ul class="lists navigation__items">
+                <li class="navigation__item">
+                  <a class="links link__navigation" href="./index.html"
+                    >Студия</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a
+                    class="links link__navigation is-current"
+                    href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="navigation__item">
+                  <a class="links link__navigation" href="">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="contacts__thumb">
+              <ul class="lists contacts">
+                <li class="contacts__item">
+                  <a class="links link__contacts" href="tel:+380961111111">
+                    <svg class="smartphone">
+                      <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+                <li class="contacts__item">
+                  <a
+                    class="links link__contacts mail"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="envelope">
+                      <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+              </ul>
+              <ul class="lists social__menu">
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Instagram</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Twitter</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">Facebook</a>
+                </li>
+                <li class="social__menu-item">
+                  <a href="" class="links link__social-menu">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="hidden">Наше портфолио</h1>
+          <ul class="lists filter">
+            <li class="filter__item">
+              <button class="button__filter is-active" type="button">
+                Все
+              </button>
+            </li>
+            <li class="filter__item">
+              <button class="button__filter" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="button__filter" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="button__filter" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="button__filter" type="button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="lists portfolio">
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio1-desktop-1x.jpg    1x,
+                        ./images/Portfolio1-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio1-tablet-1x.jpg    1x,
+                        ./images/Portfolio1-tablet-2x.jpg    2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio1-mob-1x.jpg    1x,
+                        ./images/Portfolio1-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio1-desktop-1x.jpg"
+                      alt="Ноутбук с изображением карточек людей на экране"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">Технокряк</h2>
+                  <p class="portfolio-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio2-desktop-1x.jpg    1x,
+                        ./images/Portfolio2-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio2-tablet-1x.jpg    1x,
+                        ./images/Portfolio2-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio2-mob-1x.jpg    1x,
+                        ./images/Portfolio2-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio2-desktop-1x.jpg"
+                      alt="Баскетболисты в прыжке, один с мячом, второй в защите"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus. Lorem ipsum
+                      dolor sit amet, consectetur adipisicing elit. Assumenda
+                      rerum ullam nisi magnam natus earum, in exercitationem
+                      delectus quam tempore.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">
+                    Постер
+                    <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="portfolio-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio3-desktop-1x.jpg    1x,
+                        ./images/Portfolio3-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio3-tablet-1x.jpg    1x,
+                        ./images/Portfolio3-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio3-mob-1x.jpg    1x,
+                        ./images/Portfolio3-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio3-desktop-1x.jpg"
+                      alt="На фоне рыбы надпись The seafood restaurant"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">
+                    Ресторан
+                    <span lang="en">Seafood</span>
+                  </h2>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio4-desktop-1x.jpg    1x,
+                        ./images/Portfolio4-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/Portfolio4-tablet-1x.jpg    1x,
+                        ./images/Portfolio4-tablet-2x.jpg    2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio4-mob-1x.jpg    1x,
+                        ./images/Portfolio4-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio4-desktop-1x.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">
+                    Проект
+                    <span lang="en">Prime</span>
+                  </h2>
+                  <p class="portfolio-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio5-desktop-1x.jpg    1x,
+                        ./images/Portfolio5-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio5-tablet-1x.jpg    1x,
+                        ./images/Portfolio5-tablet-2x.jpg    2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio5-mob-1x.jpg    1x,
+                        ./images/Portfolio5-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio5-desktop-1x.jpg"
+                      alt="Коробки белая и картонного цвета с надписями сверху"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">
+                    Проект
+                    <span lang="en">Boxes</span>
+                  </h2>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio6-desktop-1x.jpg    1x,
+                        ./images/Portfolio6-desktop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio6-tablet-1x.jpg    1x,
+                        ./images/Portfolio6-tablet-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio6-mob-1x.jpg    1x,
+                        ./images/Portfolio6-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio6-desktop-1x.jpg"
+                      alt="Монитор"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title" lang="en">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-card__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio7-desktop-1x.jpg    1x,
+                        ./images/Portfolio7-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio7-tablet-1x.jpg    1x,
+                        ./images/Portfolio7-tablet-2x.jpg    2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio7-mob-1x.jpg    1x,
+                        ./images/Portfolio7-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio7-desktop-1x.jpg"
+                      alt="Книга в развернутом виде"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">
+                    Издание
+                    <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="portfolio-card__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio8-desktop-1x.jpg    1x,
+                        ./images/Portfolio8-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio8-tablet-1x.jpg    1x,
+                        ./images/Portfolio8-tablet-2x.jpg    2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio8-mob-1x.jpg    1x,
+                        ./images/Portfolio8-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio8-desktop-1x.jpg"
+                      alt="Бирка с надписью: Lab El Tag"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title">
+                    Проект
+                    <span lang="en">LAB</span>
+                  </h2>
+                  <p class="portfolio-card__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio-card">
+              <a class="links link__portfolio" href="">
+                <div class="portfolio-card__aside">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/Portfolio9-desktop-1x.jpg    1x,
+                        ./images/Portfolio2-desktop-2x.jpg    2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio9-tablet-1x.jpg    1x,
+                        ./images/Portfolio9-tablet-2x.jpg    2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/Portfolio9-mob-1x.jpg    1x,
+                        ./images/Portfolio9-mob-2x.jpg    2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="images"
+                      src="./images/Portfolio9-desktop-1x.jpg"
+                      alt="Руки на открытом ноутбуке. Картинка на экране ноутбука с надписью: Growing Business"
+                    />
+                  </picture>
+
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Accusamus quod nobis obcaecati corrupti voluptates. Quae
+                      veniam totam harum excepturi repellendus.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-card__body">
+                  <h2 class="portfolio-card__title" lang="en">
+                    Growing Business
+                  </h2>
+                  <p class="portfolio-card__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-tablet">
+          <div class="footer__thumb">
+            <!-- Лого -->
+            <a class="links logo logo--footer" href="./index.html" lang="en">
+              <span class="logo--accent">Web</span>
+              Studio
+            </a>
+
+            <!-- адрес -->
+            <address>
+              <a
+                class="links footer__address"
+                href="https://goo.gl/maps/VM6gPYjPhEStrqMR6"
+                target="_blank"
+                rel="noopener, nofollow, noreferrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+
+              <!-- Почта и телефон -->
+              <ul class="lists">
+                <li class="footer__item">
+                  <a class="links footer__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="links footer__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__thumb footer__thumb--social">
+            <strong class="footer__text">Присоединяйтесь</strong>
+            <ul class="lists social">
+              <li class="social__item">
+                <a class="link__social link__social--footer" href="">
+                  <svg class="icon__social">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="link__social link__social--footer" href="">
+                  <svg class="icon__social">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="link__social link__social--footer" href="">
+                  <svg class="icon__social">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="link__social link__social--footer" href="">
+                  <svg class="icon__social">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form class="js-speaker-form">
+          <label class="js-speaker-form__label">
+            <strong class="footer__text">Подпишитесь на рассылку</strong>
+            <input
+              class="js-speaker-form__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+          </label>
+          <button class="button__send" type="submit">
+            Подписаться
+            <svg class="icon__send icon__send--append">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+
+    <script src="./js/header.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>
